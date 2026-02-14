@@ -18,11 +18,11 @@
 
 ## 📌 Executive Summary
 
-This threat hunt uncovered a sophisticated multi-stage data theft operation targeting sensitive HR compensation and employee review data across multiple systems within the environment. What began as compromised credentials on workstation **sys1-dept** evolved into a coordinated campaign spanning five compromised endpoints, systematic targeting of year-end bonus matrices, employee scorecards, and candidate packages, culminating in staged data prepared for exfiltration.
+This threat hunt identified a complex, multi-phase data theft operation targeting sensitive HR compensation and employee review data across several systems in the environment. The intrusion began with compromised credentials on workstation sys1-dept and developed into a coordinated campaign impacting five endpoints. Throughout the activity, the attacker repeatedly accessed year-end bonus matrices, employee scorecards, and candidate packages, ultimately staging the collected data in preparation for exfiltration.
 
-The adversary demonstrated advanced operational security through methodical reconnaissance, dual persistence mechanisms, anti-forensic log clearing, and phased data collection across departmental boundaries. The attacker's focus on approved compensation data, combined with lateral movement to HR and Finance systems, indicates corporate espionage, insider threat activity, or ransomware operators seeking maximum leverage for extortion.
+The adversary demonstrated deliberate and methodical tradecraft, including structured reconnaissance, multiple persistence mechanisms, anti-forensic log clearing, and phased data collection across departments. The consistent focus on finalized compensation artifacts, along with lateral movement into HR and Finance systems, suggests motives aligned with corporate espionage, insider misuse, or extortion-driven objectives.
 
-This investigation highlights how attackers can successfully exploit valid credentials to blend into legitimate business operations, systematically pillage sensitive data repositories, and prepare for bulk exfiltration while evading real-time detection through off-hours operations and social engineering file naming conventions.
+This investigation illustrates how attackers leveraging valid credentials can blend into normal business workflows while systematically aggregating high-value data. By operating during off-hours and using realistic file naming conventions, the attacker reduced the likelihood of detection while preparing data for large-scale exfiltration.
 
 ---
 
